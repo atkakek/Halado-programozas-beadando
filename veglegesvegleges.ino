@@ -4,11 +4,10 @@
 #include <Adafruit_HTU21DF.h>
 #include <Adafruit_SGP40.h>
 #include "esp_sleep.h"
+#include "secrets.h"
 
-const char* ssid     = "Telekom-6jv13P";
-const char* password = "eet46t8pfm3e";
-#define AIO_USERNAME "atka"
-#define AIO_KEY      "aio_Inhy127cOxXFSliL06hN8VBKDUms"
+const char* ssid     = WIFI_SSID;
+const char* password = WIFI_PASS;
 
 #define HTU_SDA 8
 #define HTU_SCL 9
